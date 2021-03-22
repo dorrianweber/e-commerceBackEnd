@@ -44,6 +44,7 @@ router.get('/:id', (req, res) => {
   }
 });
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // create new product
 router.post('/', (req, res) => {
   /* req.body should look like this...
@@ -75,7 +76,9 @@ router.post('/', (req, res) => {
       res.status(400).json(err);
     });
 });
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // update product
 router.put('/:id', (req, res) => {
   // update product data
@@ -117,6 +120,7 @@ router.put('/:id', (req, res) => {
       res.status(400).json(err);
     });
 });
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
